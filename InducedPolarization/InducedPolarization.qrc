@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="InducedPolarization">
+    <file>buttonImages/btn_新建_d.png</file>
+    <file>buttonImage/btn_成像2.png</file>
+    <file>buttonImage/btn_成像2_d.png</file>
+    <file>buttonImage/btn_成像.png</file>
+    <file>buttonImage/btn_数据预处理.png</file>
+    <file>buttonImage/btn_数据预处理_d.png</file>
+    <file>buttonImage/btn_一键成像.png</file>
+    <file>buttonImage/btn_一键成像_d.png</file>
+    <file>buttonImage/btn_成像_d.png</file>
+    <file>buttonImage/btn_反演.png</file>
+    <file>buttonImage/btn_反演_d.png</file>
+    <file>buttonImage/btn_建模.png</file>
+    <file>buttonImage/btn_建模_d.png</file>
+    <file>buttonImage/btn_建模设置.png</file>
+    <file>buttonImage/btn_建模设置_d.png</file>
+    <file>buttonImage/btn_模拟正演.png</file>
+    <file>buttonImage/btn_模拟正演_d.png</file>
+    <file>buttonImage/btn_实测数据.png</file>
+    <file>buttonImage/btn_实测数据_d.png</file>
+    <file>buttonImage/btn_正演.png</file>
+    <file>buttonImage/btn_正演_d.png</file>
+    <file>buttonImages/Legend.png</file>
+    <file>buttonImages/btn_保存.png</file>
+    <file>buttonImages/btn_保存_d.png</file>
+    <file>buttonImages/btn_打开.png</file>
+    <file>buttonImages/btn_打开_d.png</file>
+    <file>buttonImages/btn_观测系统.png</file>
+    <file>buttonImages/btn_文件.png</file>
+    <file>buttonImages/btn_文件夹.png</file>
+    <file>buttonImages/btn_新建.png</file>
+    <file>buttonImages/btn_原始数据.png</file>
+    <file>buttonImages/icon_line.png</file>
+    <file>buttonImages/icon_line_H.png</file>
+    <file>buttonImages/showData.png</file>
+    <file>buttonImages/打开项目.png</file>
+    <file>images/showData.png</file>
+    <file>images/激发极化.png</file>
+    <file>images/打开项目.png</file>
+    <file>images/icon_line_H.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,62 @@
+﻿  Rcc'ing InducedPolarization.qrc...
+  Moc'ing InducedPolarization.h...
+  Moc'ing DialogInversionParaSetting.h...
+  Moc'ing DialogModeling.h...
+  Moc'ing DialogProgress.h...
+  Moc'ing GlobalClass\GlobalParam.h...
+  Moc'ing DialogSetup.h...
+  Moc'ing MyWidgetImaging.h...
+  Moc'ing LogSystem.h...
+  Moc'ing ForwardAndInverseProcess.h...
+  DialogDataPreprocessing.cpp
+  DialogForwardModelingParaSetting.cpp
+  DialogInversionParaSetting.cpp
+  DialogModeling.cpp
+DialogForwardModelingParaSetting.cpp(25): warning C4129: “.”: 不可识别的字符转义序列 (编译源文件 DialogForwardModelingParaSetting.cpp)
+DialogInversionParaSetting.cpp(51): warning C4129: “.”: 不可识别的字符转义序列 (编译源文件 DialogInversionParaSetting.cpp)
+  DialogModelingPara.cpp
+  DialogObservationDeviceSettings.cpp
+DialogModelingPara.cpp(77): warning C4129: “.”: 不可识别的字符转义序列 (编译源文件 DialogModelingPara.cpp)
+  DialogProgress.cpp
+  DialogSetup.cpp
+DialogObservationDeviceSettings.cpp(618): warning C4129: “.”: 不可识别的字符转义序列 (编译源文件 DialogObservationDeviceSettings.cpp)
+  DialogSimuForward.cpp
+DialogSimuForward.cpp(202): warning C4129: “.”: 不可识别的字符转义序列 (编译源文件 DialogSimuForward.cpp)
+  ForwardAndInverseProcess.cpp
+  GlobalParam.cpp
+  InducedPolarization.cpp
+  LogSystem.cpp
+  main.cpp
+  ModelingSubdivision.cpp
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(1472): warning C4700: 使用了未初始化的局部变量“inverSwitch”
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(1593): warning C4700: 使用了未初始化的局部变量“inverSwitch”
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(1737): warning C4700: 使用了未初始化的局部变量“RES”
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(534): warning C4700: 使用了未初始化的局部变量“inverSwitch”
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(644): warning C4700: 使用了未初始化的局部变量“RES”
+d:\document\项目---激发极化x86\inducedpolarization\forwardandinverseprocess.cpp(791): warning C4700: 使用了未初始化的局部变量“EPS_RMS”
+  MyTableWidget.cpp
+  MyTableWidgetHalfLifeCurve.cpp
+  MyTableWidgetRemoveBadPoints.cpp
+  MyWidgetImaging.cpp
+  ProjectManager.cpp
+  imageAnalysis.cpp
+  DetectObserver.cpp
+  ViewWidget3d.cpp
+  moc_DialogDataPreprocessing.cpp
+  moc_DialogForwardModelingParaSetting.cpp
+  moc_DialogModelingPara.cpp
+  moc_DialogObservationDeviceSettings.cpp
+  moc_MyTableWidgetRemoveBadPoints.cpp
+  moc_MyTableWidgetHalfLifeCurve.cpp
+  moc_MyTableWidget.cpp
+  qrc_InducedPolarization.cpp
+  moc_InducedPolarization.cpp
+  moc_DialogInversionParaSetting.cpp
+  moc_DialogModeling.cpp
+  moc_DialogProgress.cpp
+  moc_GlobalParam.cpp
+  moc_DialogSetup.cpp
+  moc_MyWidgetImaging.cpp
+  moc_LogSystem.cpp
+  moc_ForwardAndInverseProcess.cpp
+  InducedPolarization.vcxproj -> D:\document\项目---激发极化x86\Win32\Release\InducedPolarization.exe

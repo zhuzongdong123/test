@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="osgEngine">
+      <UniqueIdentifier>{71a740be-8425-4443-92dd-d73a59c67de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pb">
+      <UniqueIdentifier>{fec11b9c-95b9-4c7f-8903-123e7d74a168}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InducedPolarization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelingSubdivision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\drawAxis.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\ViewWidget2d.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\ViewWidget3d.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\WalkManipulator.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\dataPreProcess\dataPreProcess.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detecImage\imageAnalysis.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectDataLoadAndAnalysis\detectData.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectDataLoadAndAnalysis\detectDataDraw.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectIrresurface\detectDataIrreSurface.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectIrresurface\shaderprogram.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectIrresurface\shading.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\detectObserver\DetectObserver.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\eventHandle\guiEventHandler.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\tool\light.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\tool\sceneTool.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\tunnelDraw\drawFunc.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\tunnelDraw\tunnelDraw.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="pb\Project.pb.pb.cc">
+      <Filter>pb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3ddisplay\pickHandler.cpp">
+      <Filter>osgEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalClass\GlobalParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogDisplayImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="InducedPolarization.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ModelingSubdivision.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\ViewerWidget2d.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\ViewerWidget3d.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\WalkManipulator.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\dataPreProcess\dataPreProcess.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\eventHandle\guiEventHandler.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="include\pickHandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="include\3ddisplay\detectObserv\DetectObserver.h">
+      <Filter>osgEngine</Filter>
+    </QtMoc>
+    <QtMoc Include="GlobalClass\GlobalParam.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DialogDisplayImage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="InducedPolarization.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InducedPolarization.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\Common.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\drawAxis.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detecImage\imageAnalysis.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detectData\detectData.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detectData\detectDataDraw.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detectIrresurface\detectIrreSurface.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detectIrresurface\shaderprogram.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\detectIrresurface\shading.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\tool\light.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\tool\sceneTool.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\tunnelDraw\drawFunc.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3ddisplay\tunnelDraw\tunnelDraw.h">
+      <Filter>osgEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="pb\Project.pb.pb.h">
+      <Filter>pb</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="InducedPolarization.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="DialogDisplayImage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

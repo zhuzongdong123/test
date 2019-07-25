@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogDataPreprocessing</class>
+ <widget class="QDialog" name="DialogDataPreprocessing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>数据预处理</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabRemovePoint">
+      <attribute name="title">
+       <string>坏点剔除</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="100,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="MyTableWidgetRemoveBadPoints" name="tableWidgetRemovePoint"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_measuring_edit">
+           <property name="text">
+            <string>编辑</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_measuring_update">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>更新</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabDataExtraction">
+      <attribute name="title">
+       <string>观测数据提取</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="tableWidgetDataExtraction">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMeasuringPoints">
+      <attribute name="title">
+       <string>观测数据调整</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="100,1">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,100">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="MyPushButtonV" name="pushButton_V">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;background-color: rgb(232, 232, 232);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="DataPreprocess" name="tableWidget_2">
+             <property name="styleSheet">
+              <string notr="true">border:none</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="MyPushButtonH" name="pushButton_H">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+background-color: rgb(232, 232, 232);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DataPreprocess</class>
+   <extends>QTableWidget</extends>
+   <header>dataPreProcess/dataPreProcess.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyTableWidgetRemoveBadPoints</class>
+   <extends>QTableWidget</extends>
+   <header>MyTableWidgetRemoveBadPoints.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyPushButtonH</class>
+   <extends>QPushButton</extends>
+   <header>MyPushButtonH.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyPushButtonV</class>
+   <extends>QPushButton</extends>
+   <header>MyPushButtonV.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_measuring_edit</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDataPreprocessing</receiver>
+   <slot>onSupplyEditClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>-18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_measuring_update</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDataPreprocessing</receiver>
+   <slot>onSupplyUpdateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onSupplyEditClick()</slot>
+  <slot>onSupplyUpdateClick()</slot>
+ </slots>
+</ui>
