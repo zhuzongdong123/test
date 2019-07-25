@@ -21,7 +21,7 @@ InducedPolarization::InducedPolarization(QWidget *parent)
 
 	//QObject::connect(m_ui.widget_leftUpper->getPickHandle(), SIGNAL(addPopMenu()), this, SLOT(showMax()));
 	
-	////右键菜单
+	//右键菜单
 	//m_openFile = new QAction(QString::fromLocal8Bit("打开文件"), this);
 	//QObject::connect(m_openFile, SIGNAL(triggered()), this, SLOT(onActionOpenFile()));
 
