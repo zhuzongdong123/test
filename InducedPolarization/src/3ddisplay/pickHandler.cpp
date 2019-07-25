@@ -20,12 +20,12 @@ bool PickHandler::handle(const osgGA::GUIEventAdapter &ea, osgGA::GUIActionAdapt
 
 	switch (ea.getEventType())
 	{
-	case osgGA::GUIEventAdapter::PUSH:
+	case osgGA::GUIEventAdapter::DOUBLECLICK:
 	{
 		//ÓÒ¼üµÄ³¡ºÏ
-		if (osgGA::GUIEventAdapter::RIGHT_MOUSE_BUTTON == ea.getButton())
+		if (osgGA::GUIEventAdapter::LEFT_MOUSE_BUTTON == ea.getButton())
 		{
-			emit addPopMenu();
+			emit doubleClicked();
 		}
 		aa.requestRedraw();
 		break;

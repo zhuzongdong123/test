@@ -1,60 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>InducedPolarizationClass</class>
- <widget class="QDialog" name="InducedPolarizationClass">
+ <class>InducedPolarization</class>
+ <widget class="QMainWindow" name="InducedPolarization">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1023</width>
-    <height>807</height>
+    <width>986</width>
+    <height>742</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>可视化多级界面</string>
+   <string>MainWindow</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="100">
-     <property name="spacing">
-      <number>0</number>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="ViewerWidget3d" name="widget_leftUpper" native="true"/>
+      </item>
+      <item>
+       <widget class="ViewerWidget3d" name="widget_rightUpper" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="ViewerWidget3d" name="widget_leftDown" native="true"/>
+      </item>
+      <item>
+       <widget class="ViewerWidget3d" name="widget_rightDown" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>986</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menudfA">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuOSG">
+     <property name="title">
+      <string>OSG文件</string>
      </property>
-     <item>
-      <widget class="QWidget" name="widget_leftDown" native="true"/>
-     </item>
-    </layout>
-   </item>
-   <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="100">
-     <property name="spacing">
-      <number>0</number>
-     </property>
-     <item>
-      <widget class="ViewerWidget3d" name="widget_leftUpper" native="true"/>
-     </item>
-    </layout>
-   </item>
-   <item row="1" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout_4" stretch="100">
-     <property name="spacing">
-      <number>0</number>
-     </property>
-     <item>
-      <widget class="QWidget" name="widget_rightDown" native="true"/>
-     </item>
-    </layout>
-   </item>
-   <item row="0" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="100">
-     <property name="spacing">
-      <number>0</number>
-     </property>
-     <item>
-      <widget class="QWidget" name="widget_rightUpper" native="true"/>
-     </item>
-    </layout>
-   </item>
-  </layout>
+     <addaction name="action_openOSGFile1"/>
+     <addaction name="separator"/>
+     <addaction name="action_openOSGFile2"/>
+    </widget>
+    <addaction name="menuOSG"/>
+    <addaction name="separator"/>
+    <addaction name="action22"/>
+   </widget>
+   <addaction name="menudfA"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action22">
+   <property name="text">
+    <string>观测系统</string>
+   </property>
+  </action>
+  <action name="action_openOSGFile1">
+   <property name="text">
+    <string>文件1</string>
+   </property>
+  </action>
+  <action name="action_openOSGFile2">
+   <property name="text">
+    <string>文件2</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>
@@ -65,5 +111,42 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>action_openOSGFile1</sender>
+   <signal>triggered()</signal>
+   <receiver>InducedPolarization</receiver>
+   <slot>openOSGFile1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_openOSGFile2</sender>
+   <signal>triggered()</signal>
+   <receiver>InducedPolarization</receiver>
+   <slot>openOSGFile2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openOSGFile1()</slot>
+  <slot>openOSGFile2()</slot>
+ </slots>
 </ui>

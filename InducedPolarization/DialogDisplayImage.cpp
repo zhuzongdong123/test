@@ -5,6 +5,11 @@
 DialogDisplayImage::DialogDisplayImage(QWidget *parent)
 {
 	m_ui.setupUi(this);
+
+	Qt::WindowFlags flags = Qt::Dialog;
+	flags |= Qt::WindowMinMaxButtonsHint;
+	flags |= Qt::WindowCloseButtonHint;
+	setWindowFlags(flags);
 }
 
 void DialogDisplayImage::setOsgFilePath(QString fileName)

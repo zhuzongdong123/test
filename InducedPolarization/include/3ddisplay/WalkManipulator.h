@@ -49,6 +49,9 @@ class WalkTrackerManipulator : public QObject, public osgGA::CameraManipulator
     osg::Vec3f m_CurrentEye;
     osg::Vec3f m_HomeEye;
 
+signals:
+	void addPopMenu();
+
   private:
     bool m_pickDrag;
     unsigned int m_currentTabIndex; //用于保存图片

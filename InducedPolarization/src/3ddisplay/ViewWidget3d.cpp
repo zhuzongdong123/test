@@ -201,17 +201,16 @@ ViewerWidget3d::ViewerWidget3d(QWidget* parent) :QWidget(parent)
 	m_pViewer->addEventHandler(new osgViewer::StatsHandler);
 	m_pViewer->addEventHandler(new osgGA::StateSetManipulator(m_pViewer->getCamera()->getOrCreateStateSet()));
 	m_pViewer->setKeyEventSetsDone(0);
-	m_pickHandlerEvent = new PickHandler;
-	m_pViewer->addEventHandler(m_pickHandlerEvent.get());
 	connect(&_timer, SIGNAL(timeout()), this, SLOT(update()));
-	QObject::connect(m_pickHandlerEvent, SIGNAL(addPopMenu()), this, SLOT(addPopMenu()));
 	_timer.start(40);//关联定时器计满信号和响应的槽函数m_pBoxLayout = NULL;
+	m_pickHandlerEvent = new PickHandler;
+	m_pViewer->addEventHandler(m_pickHandlerEvent);
+	QObject::connect(m_pickHandlerEvent, SIGNAL(doubleClicked()), this, SLOT(onActionShowMax()));
 
 	m_SceneGroup = new osg::Group;
 	m_SceneGroup->getOrCreateStateSet()->setMode(GL_DEPTH_TEST, osg::StateAttribute::ON);//开启深度测试
 	
 	setVBox();
-	createAction();
 
 	//onActionOpenFile();
 	
@@ -817,68 +816,6 @@ void ViewerWidget3d::makeCoordinate(float xMin, float xMax, float yMin, float yM
 	
 	m_SceneGroup->addChild(geode.get());
 	m_pViewer->setSceneData(m_SceneGroup); //将模型添加到渲染器中
-}
-
-//显示右键菜单
-void ViewerWidget3d::addPopMenu()
-{
-	QMenu *menu = new QMenu();
-	menu->addAction(m_openFile);
-	menu->addAction(m_showMax);
-	menu->exec(QCursor::pos());
-	delete menu;
-}
-
-void ViewerWidget3d::createAction()
-{
-	//右键菜单
-	m_openFile = new QAction(QString::fromLocal8Bit("打开文件"), this);
-	QObject::connect(m_openFile, SIGNAL(triggered()), this, SLOT(onActionOpenFile()));
-
-	m_showMax = new QAction(QString::fromLocal8Bit("最大化显示"), this);
-	QObject::connect(m_showMax, SIGNAL(triggered()), this, SLOT(onActionShowMax()));
-}
-
-void ViewerWidget3d::onActionOpenFile()
-{
-	//打开文件
-	QString file_name = QFileDialog::getOpenFileName(
-		this,
-		QStringLiteral("请选择导入文件"),					//对话框的标题
-		QDir::currentPath(),								//默认打开路径
-		QStringLiteral("文件类型(*.osg)"),					//打开文件的格式
-		0);													//默认选择的过滤器
-
-	if (file_name != "")
-	{
-		osg::Node* cessnaNode = NULL;
-
-		QTextCodec *code = QTextCodec::codecForName("GB2312"); //解决中文路径问题
-		std::string filePath = code->fromUnicode(file_name).data();
-		cessnaNode = osgDB::readNodeFile(filePath);
-
-		if (cessnaNode != NULL )
-		{
-			m_pViewer->setSceneData(cessnaNode); //将模型添加到渲染器中
-			m_osgFilePath = file_name;
-		}	
-
-		//以下是创建了渲染器的一些操作
-		osg::ref_ptr<osgGA::TrackballManipulator> pTrackMani = new osgGA::TrackballManipulator;
-		pTrackMani->setAutoComputeHomePosition(true);
-		m_pViewer->setCameraManipulator(pTrackMani.get());
-		m_pViewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);//创建为单线程    
-
-																		//窗口大小变化事件
-		m_pViewer->addEventHandler(new osgViewer::WindowSizeHandler);
-		//添加一些常用状态设置
-		m_pViewer->addEventHandler(new osgViewer::StatsHandler);
-		m_pViewer->addEventHandler(new osgGA::StateSetManipulator(m_pViewer->getCamera()->getOrCreateStateSet()));
-		m_pViewer->setKeyEventSetsDone(0);
-		m_pickHandlerEvent = new PickHandler;
-		m_pViewer->addEventHandler(m_pickHandlerEvent.get());
-
-	}
 }
 
 void ViewerWidget3d::onActionShowMax()

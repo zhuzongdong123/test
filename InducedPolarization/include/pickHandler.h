@@ -30,7 +30,7 @@ protected:
 
 signals:
 	void updateAdjustData();
-	void addPopMenu();
+	void doubleClicked();
 private:
 	bool mEnableDragger;
 	int m_currentPointIndex;

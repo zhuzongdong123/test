@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_PickHandler_t {
     QByteArrayData data[4];
-    char stringdata0[41];
+    char stringdata0[44];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,10 +34,11 @@ static const qt_meta_stringdata_PickHandler_t qt_meta_stringdata_PickHandler = {
 QT_MOC_LITERAL(0, 0, 11), // "PickHandler"
 QT_MOC_LITERAL(1, 12, 16), // "updateAdjustData"
 QT_MOC_LITERAL(2, 29, 0), // ""
-QT_MOC_LITERAL(3, 30, 10) // "addPopMenu"
+QT_MOC_LITERAL(3, 30, 13) // "doubleClicked"
 
     },
-    "PickHandler\0updateAdjustData\0\0addPopMenu"
+    "PickHandler\0updateAdjustData\0\0"
+    "doubleClicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -72,7 +73,7 @@ void PickHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->updateAdjustData(); break;
-        case 1: _t->addPopMenu(); break;
+        case 1: _t->doubleClicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -87,7 +88,7 @@ void PickHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         }
         {
             typedef void (PickHandler::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&PickHandler::addPopMenu)) {
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&PickHandler::doubleClicked)) {
                 *result = 1;
                 return;
             }
@@ -141,7 +142,7 @@ void PickHandler::updateAdjustData()
 }
 
 // SIGNAL 1
-void PickHandler::addPopMenu()
+void PickHandler::doubleClicked()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }

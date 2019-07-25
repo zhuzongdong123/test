@@ -15,11 +15,12 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_InducedPolarization.h"
 #include "DialogDisplayImage.h"
+#include "3ddisplay/ViewerWidget3d.h"
 
 /*
 * @brief 创建工程对话框类
 */
-class InducedPolarization : public QDialog
+class InducedPolarization : public QMainWindow
 {
     Q_OBJECT
 
@@ -39,12 +40,11 @@ class InducedPolarization : public QDialog
 
 public slots:
 	void onActionShowMax(QString objectName, QString osgFilePath);
-	//void showMax();
-	//void onActionOpenFile();
-
+	void openOSGFile1();
+	void openOSGFile2();
 
   private:
-    Ui::InducedPolarizationClass m_ui; ///< UI文件
+    Ui::InducedPolarization m_ui; ///< UI文件
 	DialogDisplayImage* m_dialogLeftUpper;
 	DialogDisplayImage* m_dialogLeftDown;
 	DialogDisplayImage* m_dialogRightDown;

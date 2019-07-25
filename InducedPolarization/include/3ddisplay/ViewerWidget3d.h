@@ -22,6 +22,7 @@
 #include "Timer.h"
 #include "pickHandler.h"
 #include <QtWidgets/QAction>
+#include "WalkManipulator.h"
 
 class BaseDraw
 {
@@ -55,6 +56,8 @@ public:
 
 	osg::ref_ptr<osg::Group> getSceneGroup() { return m_SceneGroup.get(); }
 	osg::ref_ptr<osgViewer::Viewer> getViewer() { return m_pViewer.get(); }
+	void setOsgFilePath(QString fileName) { m_osgFilePath = fileName; }
+	QString getOsgFilePath() { return m_osgFilePath; }
 	void makeCoordinate(float xMin, float xMax, float yMin, float yMax, float zMin, float zMax, float vTap = 10, bool drawXYZ = true);//生成数据的坐标轴
 	PickHandler* getPickHandle() { return m_pickHandlerEvent; }
 
@@ -75,8 +78,6 @@ protected:
 	osg::ref_ptr<osg::Group> m_SceneGroup;
 
 public slots:
-	void addPopMenu();
-	void onActionOpenFile();
 	void onActionShowMax();
 
 signals:
@@ -84,7 +85,6 @@ signals:
 
 private:
 	void setVBox();
-	void createAction();
 	
 private:
 	osg::ref_ptr<osg::Camera> m_pCamera;
@@ -94,4 +94,5 @@ private:
 	QAction *m_openFile;
 	QAction *m_showMax;
 	QString m_osgFilePath;
+	osg::ref_ptr<osgEngine::WalkTrackerManipulator> m_walkTracker;
 };

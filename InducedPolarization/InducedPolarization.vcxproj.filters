@@ -200,10 +200,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="InducedPolarization.ui">
+    <QtUic Include="DialogDisplayImage.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="DialogDisplayImage.ui">
+    <QtUic Include="InducedPolarization.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
